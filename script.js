@@ -14,7 +14,7 @@ document.querySelectorAll('.nav a').forEach(a=>a.addEventListener('click',()=>he
 const observer=new IntersectionObserver(entries=>entries.forEach(e=>{if(e.isIntersecting){e.target.classList.add('visible');observer.unobserve(e.target)}}),{threshold:.12});
 document.querySelectorAll('.reveal').forEach((el,i)=>{el.style.transitionDelay=`${Math.min(i%4,3)*.08}s`;observer.observe(el)});
 
-const target=new Date('2026-09-20T15:00:00+03:00').getTime();
+const target=new Date('2026-08-02T15:00:00+05:00').getTime();
 function tick(){let d=Math.max(0,target-Date.now());const values={days:Math.floor(d/86400000),hours:Math.floor(d/3600000)%24,minutes:Math.floor(d/60000)%60,seconds:Math.floor(d/1000)%60};Object.entries(values).forEach(([id,v])=>document.getElementById(id).textContent=String(v).padStart(2,'0'))}
 tick();setInterval(tick,1000);
 

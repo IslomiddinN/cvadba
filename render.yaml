@@ -1,6 +1,6 @@
 services:
   - type: web
-    name: madina-faridun-wedding
+    name: islomiddin-wedding
     runtime: node
     plan: free
     buildCommand: npm install
