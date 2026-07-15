@@ -9,4 +9,6 @@
 .place-info{position:relative;overflow:hidden}.place-info:after{content:'❖  ❖  ❖';position:absolute;right:-18px;bottom:18px;color:rgba(196,154,72,.15);font:72px Prata,serif;letter-spacing:.12em;transform:rotate(-12deg)}
 .detail-card{border-top:3px solid var(--gold);position:relative;overflow:hidden}.detail-card:after{content:'◆';position:absolute;right:18px;top:10px;color:rgba(159,40,56,.2);font-size:26px}
 .date-card:before,.date-card:after{content:'◆';color:var(--ruby);font-size:8px}.countdown{background-image:linear-gradient(rgba(7,61,53,.96),rgba(7,61,53,.96)),repeating-linear-gradient(45deg,transparent 0 14px,rgba(196,154,72,.2) 15px 16px)}
+.header-actions{display:flex;align-items:center;gap:22px}.lang-switch{width:42px;height:32px;border:1px solid currentColor;background:transparent;color:inherit;font:600 10px Manrope,sans-serif;letter-spacing:.12em;cursor:pointer;transition:.25s}.lang-switch:hover{background:var(--gold);border-color:var(--gold);color:white}
+@media(max-width:900px){.header-actions .header-rsvp{display:none}.header-actions{margin-left:auto;margin-right:14px}}
 @media(prefers-reduced-motion:reduce){*{scroll-behavior:auto!important}.reveal{opacity:1;transform:none;transition:none}}
